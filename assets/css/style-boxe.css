@@ -255,7 +255,10 @@ hr {
 
 
 @media (max-width: 394px) {
-  footer a {
+    header figcaption {
+        font-size: 0.85em;
+    }
+    footer a {
     font-size: 0.7em;
 
   }
