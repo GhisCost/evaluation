@@ -36,6 +36,10 @@ header {
   color: #ed9d06;
 }
 
+#titre figcaption {
+  padding-top: 20px;
+}
+
 #navigation {
   margin: auto;
   width: 90%;
@@ -53,6 +57,7 @@ header {
   justify-content: space-evenly;
   gap: 10px;
   margin: 30px auto;
+  font-weight: 500;
 }
 
 #navigation a {
@@ -62,7 +67,7 @@ header {
 
 main {
   width: 95%;
-  margin: 15px auto 0px auto;
+  margin: 20px auto 0px auto;
 }
 
 #banniere {
@@ -107,8 +112,8 @@ main {
 }
 
 .reduc h3 {
-    font-family: sans-serif;
-    font-size: 1.6em;
+  font-family: sans-serif;
+  font-size: 1.6em;
 }
 .carte figure {
   position: relative;
@@ -168,10 +173,11 @@ main {
 
 footer {
   background-color: #373737;
-
 }
 
-#pied {position: relative;}
+#pied {
+  position: relative;
+}
 
 footer ul {
   display: flex;
@@ -312,7 +318,7 @@ hr {
   }
 
   #titre {
-    margin: 40px 10px 15px 10px;
+    margin: 40px 10px 5px 10px;
     width: 30%;
   }
 
@@ -325,7 +331,7 @@ hr {
   }
 
   #navigation ul {
-    margin: 50px auto 15px auto;
+    margin: 75px auto 5px auto;
   }
 
   #banniere {
@@ -335,7 +341,7 @@ hr {
 
   main {
     width: 90%;
-    margin: 15px auto 0px auto;
+    margin: 20px auto 0px auto;
   }
 
   .achat {
@@ -344,13 +350,12 @@ hr {
   }
 
   .reduc {
-  background-color: #1c1c1c;
-  color: #ed9d06;
-  padding: 10px;
-  width: 80px;
-  right: -5%;
- 
-}
+    background-color: #1c1c1c;
+    color: #ed9d06;
+    padding: 10px;
+    width: 80px;
+    right: -5%;
+  }
   .prix {
     font-weight: 700;
   }
@@ -379,24 +384,27 @@ hr {
   hr {
     width: 100%;
   }
-
 }
 
-@media (min-width:1200px) {
-    #tete {
-        width:1080px;
-    }
-    main {
-        width: 1080px;
-    }
-    #pied {
-        width:1080px;
-    }
+@media (min-width: 1200px) {
+  #tete {
+    width: 1080px;
+  }
+  main {
+    width: 1080px;
+  }
+  #pied {
+    width: 1080px;
+  }
 
-    footer ul {
-        top: -7%;
-    }
-.reduc {
+  footer ul {
+    top: -7%;
+  }
+  .reduc {
     right: 0%;
-}
+  }
+
+  #titre figcaption {
+    font-size: 1.2em;
+  }
 }
