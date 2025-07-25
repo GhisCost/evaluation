@@ -53,7 +53,7 @@ btnAjout.addEventListener("click", function () {
   liste.appendChild(li);
 
   btnSupp.addEventListener("click", function () {
-    let i = listDeTaches.indexOf(this.parentElement);
+    let i = listDeTaches.indexOf(this.parentElement.textContent);
     supprimerTache(i);
     this.parentElement.remove();
   });
@@ -83,7 +83,7 @@ nouvelleTache.addEventListener("keydown", function (event) {
     liste.appendChild(li);
 
     btnSupp.addEventListener("click", function () {
-      let i = listDeTaches.indexOf(this.parentElement);
+      let i = listDeTaches.indexOf(this.parentElement.textContent);
       supprimerTache(i);
       this.parentElement.remove();
     });
